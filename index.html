@@ -322,40 +322,10 @@
 
             <script src="js/vendor/bootstrap.min.js"></script>
             <script src="js/jquery.easing.1.3.js"></script>
-            <script src="js/jflickrfeed.min.js"></script>
             <script src="js/main.js"></script>
             <script src="js/waypoints.min.js"></script>
 
-            <script>
-
-            // speed in milliseconds
-  var scrollSpeed = 25;
-  
-  // set the default position
-  var current = 0;
-
-  var offset = $('.red-block').offset().left;
-  var currentblur = '-' + offset;
-  // set the direction
-  var direction = 'h';
-
-  function bgscroll(){
-
-      // 1 pixel row at a time
-      current -= 1;
-      currentblur -=1;
-   
-      // move the background with backgrond-position css properties
-      $('.wrapper-intro').css("backgroundPosition", (direction == 'h') ? current+"px 0" : "0 " + current+"px");
-      $('.red-block').css("backgroundPosition", (direction == 'h') ? currentblur+"px 0" : "0 " + currentblur+"px");
-   
-  }
-
-  //Calls the scrolling function repeatedly
-   setInterval("bgscroll()", scrollSpeed);
-   </script>
-
-           
+        
 
             <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
