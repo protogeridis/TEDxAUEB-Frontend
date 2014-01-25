@@ -12,6 +12,7 @@
   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
 
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="css/main.css">
@@ -21,13 +22,13 @@
 <body data-spy="scroll" data-target="#headernav" data-offset="45">
 
   <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=249665595056102";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=249665595056102";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
@@ -37,128 +38,341 @@
               <div id="status" class="loading-flip loading">&nbsp;</div>
             </div>-->
 
-            <div id="header" class="header" data-spy="affix" data-offset-top="65">
+            <div id="intro" class="wrapper-intro">
+
+
+
+              <a href="#" class="ticket-ribbon"></a>
+              <div class="tagline">
+                <div class="tagline-top">
+                  <div class="tagline-left"><p>“Turning ideas into action, <strong>into paths</strong>”
+                  </p></div><!-- tagline left -->
+                  <div class="tagline-right">
+                    <p>24 March, 2014</p>
+                  </div>
+                </div><!-- tagline top -->
+                <div class="tagline-bottom">
+                  <h1>Emerging Paths</h1>
+                </div><!-- tagline bototm -->
+              </div>
+
+
+            </div><!-- #intro -->
+
+            <div id="header" class="header" data-spy="affix" data-offset-top="500">
               <div class="container">
                 <div class="row">
                   <div class="col-md-2">
                     <a href="#" class="logo header-logo"></a>
                   </div><!-- col md 2 -->
-                  <div class="col-md-10">
-                    <div class="row row-spaced row-affix-hide">
-                      <ul class="header-social">
-                        <li><a href="#"><i class="fa fa-lg fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-lg fa-twitter"></i></a></li>
-                      </ul>
-                      <div class="header-newsletter">
-                        <input type="text" placeholder="Your email">
-                      </div>
-                      <div class="header-like">
-                      <div class="fb-like" data-href="http://www.facebook.com/tedxaueb" data-width="100" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-                      </div>
-                    </div>
-                    <div class="row" id="headernav">
-                      <ul id="main-navigation" class="nav main-nav">
-                        <li><a class="nav-button" href="#intro">Home</a></li>
-                        <li><a class="nav-button" href="#info">Info</a></li>
-                        <li><a class="nav-button" href="#blog">Blog</a></li>
-                        <li><a class="nav-button" href="#social">Social</a></li>
-                        <li><a class="nav-button" href="#gallery">Photos</a></li>
-                        <li><a class="nav-button" href="#contact">Contact</a></li>
+                  <div class="col-md-8">
 
 
-                      </ul>
-                    </div>
-                  </div><!-- col md 10 -->
+                    <ul id="main-navigation" class="nav main-nav">
+                      <li><a class="nav-button" href="#intro">Home</a></li>
+                      <li><a class="nav-button" href="#info">Info</a></li>
+                      <li><a class="nav-button" href="#blog">Blog</a></li>
+                      <li><a class="nav-button" href="#social">Social</a></li>
+                      <li><a class="nav-button" href="#gallery">Photos</a></li>
+                      <li><a class="nav-button" href="#contact">Contact</a></li>
+
+
+                    </ul>
+
+                  </div><!-- col md 8 -->
+                  <div class="col-md-2">
+                    <ul class="header-social">
+                      <li><a href="#"><i class="fa fa-lg fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-lg fa-twitter"></i></a></li>
+                    </ul>
+                  </div>
                 </div><!-- row -->
               </div><!-- container -->
             </div><!-- #header -->
 
-            <div id="intro">
-            
-              </div><!-- #intro -->
-
-            
-            
-
-      
-              <div id="footer" class="footer">
-                <div class="wrapper wrapper-grey">
-                  <div class="container">
-                    <div class="row row-spaced">
-                      <div class="col-md-6">
-                        <span class="logo"></span>
-                        <p>In the spirit of ideas worth spreading, TEDx is a program of local, self-organized evtents that bring people together to share a TED-like experience. At a TEDx event, TEDTalks video and live speakers combine to spark deep discussion and connection in a small group. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. (Subject to certain rules and regulations.</p>
-                      </div>
-                      <div class="col-md-6">
-                       <div class="row row-margin">
-                         <div class="col-md-12">
-                          <h2>Be Social</h2>
-                        </div>
-                      </div>
-                      <div class="footer-form">
-                        <div class="row form-row">
-                          <div class="col-md-6">
-                            <input type="text" placeholder="mkis">
-                          </div>
-                          <div class="col-md-6">
-                            <input type="text" placeholder="mkis">
-                          </div>
-                        </div><!-- row -->
-                        <div class="row form-row">
-                          <div class="col-md-12">
-                           <textarea name="" id="" cols="30" rows="5" placeholder="Your Message"></textarea>
-                         </div>
-
-                       </div><!-- row -->
-                       <div class="row">
-                        <div class="col-md-12">
-                          <a class="red-button pull-right">Send</a>
-                          <p class="small-grey pull-right">We will get back to you
-                            as soon as possible</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div><!-- row -->
+            <div id="info">
+              <div class="wrapper wrapper-padded wrapper-info">
+                <div class="container">
                   <div class="row">
+                    <div class="col-md-4">
+                      <div class="event-info">
+                        <span class="divider-small">
+
+                        </span>
+                        <h2>The First University TEDx event</h2>
+                        <p>The theme of the second TEDx event at our university is “Emerging Paths”. 
+                          Our theme is connected to our previous theme “Redefining Reality”.</p>
+                        </div>
+                      </div><!-- col md 4 -->
+                      <div class="col-md-8">
+                        <div class="triangle">
+                          <ul class="triangle-metrics">
+                            <li class="triangle-metric metric-white" id="metric-volunteers">
+                              <h3>38</h3>
+                              <small>Volunteers</small>
+                            </li>
+                            <li class="triangle-metric" id="metric-speakers">
+                              <h3>12</h3>
+                              <small>Speakers</small>
+                            </li>
+                            <li class="triangle-metric"  id="metric-workshops">
+                              <h3>10</h3>
+                              <small>Workshops</small>
+                            </li>
+                            <li class="triangle-metric metric-white" id="metric-hours">
+                              <h3>05</h3>
+                              <small>Hours</small>
+                            </li>
+                          </div>
+                        </div>
+                      </div><!-- cold md 8 -->
+                    </div><!-- row -->
+                  </div><!-- container -->
+                </div><!--wrapper white -->
+              </div><!-- info -->
+
+              <div id="speakers" class="wrapper wrapper-padded">
+
+                <div class="container">
+                 <div class="speakers-header">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <div class="striped"></div>
+                    </div><!-- cold md 8 -->
+                    <div class="col-md-4">
+                      <p>we have gathered</p>
+<strong>12 amazing speakers</strong>
+                    </div><!-- cold md 4-->
+                  </div><!-- row -->
+                </div><!-- speakers header -->
+
+
+                <div class="speakers-thumbs">
+
+                 <div class="row">
+                   <div class="col-md-12">
+                    <div id="bx-pager">
+                      <a data-slide-index="0" class="speaker-thumb" href=""><img src="http://lorempixel.com/60/60" /></a>
+                      <a data-slide-index="1" class="speaker-thumb" href=""><img src="http://lorempixel.com/60/60" /></a>
+                      <a data-slide-index="2" class="speaker-thumb" href=""><img src="http://lorempixel.com/60/60" /></a>
+                      <a data-slide-index="3" class="speaker-thumb" href=""><img src="http://lorempixel.com/60/60" /></a>
+                      <a data-slide-index="4" class="speaker-thumb" href=""><img src="http://lorempixel.com/60/60" /></a>
+                      <a data-slide-index="5" class="speaker-thumb" href=""><img src="http://lorempixel.com/60/60" /></a>
+                      <a data-slide-index="6" class="speaker-thumb" href=""><img src="http://lorempixel.com/60/60" /></a>
+                      <a data-slide-index="7" class="speaker-thumb" href=""><img src="http://lorempixel.com/60/60" /></a>
+                      <a data-slide-index="8" class="speaker-thumb" href=""><img src="http://lorempixel.com/60/60" /></a>
+                      <a data-slide-index="9" class="speaker-thumb" href=""><img src="http://lorempixel.com/60/60" /></a>
+                      <a data-slide-index="10" class="speaker-thumb" href=""><img src="http://lorempixel.com/60/60" /></a>
+                      <a data-slide-index="11" class="speaker-thumb" href=""><img src="http://lorempixel.com/60/60" /></a>
+                      
+                    </div>
+                  </div>
+                </div><!-- row -->
+
+              </div> <!-- speakers thumbs -->
+
+              <div class="speakers-main">
+
+               <div class="row">
+                 <div class="col-md-12">
+                  <div class="speaker-push-red"></div>
+                  <ul class="bxslider">
+                    <li class="speaker-slide">
+
+                        <img class="speaker-image" src="img/cook.png" alt="">
+                        <div class="speaker-info">
+                          <span class="divider-small"></span>
+                          <h2>Tim Cook</h2>
+                          <small>CEO at Apple Inc.</small>
+                          <p>Timothy Donald "Tim" Cook (born November 1, 1960) is an American business executive, and is the CEO of Apple Inc.[1] Cook joined Apple in March 1998[2] as SVP of Worldwide Operations and also served as EVP of Worldwide Sales and Operations and was COO until he was named the CEO of Apple on August 24, 2011, succeeding Steve Jobs.[3] Cook had previously served as acting CEO of Apple after Jobs began medical leave in January 2011.[4]</p>
+                        </div>
+                    </li>
+                  
+                   <li class="speaker-slide">
+
+                        <img class="speaker-image" src="img/cook.png" alt="">
+                        <div class="speaker-info">
+                          <span class="divider-small"></span>
+                          <h2>Tim Cook</h2>
+                          <small>CEO at Apple Inc.</small>
+                          <p>Timothy Donald "Tim" Cook (born November 1, 1960) is an American business executive, and is the CEO of Apple Inc.[1] Cook joined Apple in March 1998[2] as SVP of Worldwide Operations and also served as EVP of Worldwide Sales and Operations and was COO until he was named the CEO of Apple on August 24, 2011, succeeding Steve Jobs.[3] Cook had previously served as acting CEO of Apple after Jobs began medical leave in January 2011.[4]</p>
+                        </div>
+                    </li>
+
+                     <li class="speaker-slide">
+
+                        <img class="speaker-image" src="img/cook.png" alt="">
+                        <div class="speaker-info">
+                          <span class="divider-small"></span>
+                          <h2>Tim Cook</h2>
+                          <small>CEO at Apple Inc.</small>
+                          <p>Timothy Donald "Tim" Cook (born November 1, 1960) is an American business executive, and is the CEO of Apple Inc.[1] Cook joined Apple in March 1998[2] as SVP of Worldwide Operations and also served as EVP of Worldwide Sales and Operations and was COO until he was named the CEO of Apple on August 24, 2011, succeeding Steve Jobs.[3] Cook had previously served as acting CEO of Apple after Jobs began medical leave in January 2011.[4]</p>
+                        </div>
+                    </li>
+
+                     <li class="speaker-slide">
+
+                        <img class="speaker-image" src="img/cook.png" alt="">
+                        <div class="speaker-info">
+                          <span class="divider-small"></span>
+                          <h2>Tim Cook</h2>
+                          <small>CEO at Apple Inc.</small>
+                          <p>Timothy Donald "Tim" Cook (born November 1, 1960) is an American business executive, and is the CEO of Apple Inc.[1] Cook joined Apple in March 1998[2] as SVP of Worldwide Operations and also served as EVP of Worldwide Sales and Operations and was COO until he was named the CEO of Apple on August 24, 2011, succeeding Steve Jobs.[3] Cook had previously served as acting CEO of Apple after Jobs began medical leave in January 2011.[4]</p>
+                        </div>
+                    </li>
+
+                     <li class="speaker-slide">
+
+                        <img class="speaker-image" src="img/cook.png" alt="">
+                        <div class="speaker-info">
+                          <span class="divider-small"></span>
+                          <h2>Tim Cook</h2>
+                          <small>CEO at Apple Inc.</small>
+                          <p>Timothy Donald "Tim" Cook (born November 1, 1960) is an American business executive, and is the CEO of Apple Inc.[1] Cook joined Apple in March 1998[2] as SVP of Worldwide Operations and also served as EVP of Worldwide Sales and Operations and was COO until he was named the CEO of Apple on August 24, 2011, succeeding Steve Jobs.[3] Cook had previously served as acting CEO of Apple after Jobs began medical leave in January 2011.[4]</p>
+                        </div>
+                    </li>
+                  
+                  </ul>
+                </div>
+              </div><!-- row -->
+
+            </div> <!-- speakers thumbs -->
+
+          </div><!-- container -->
+
+
+
+
+
+
+
+        </div><!-- speakers -->
+
+
+        <div id="members">
+          <ul class="photo-gallery">
+            <li>
+              <img src="http://lorempixel.com/210/250/" alt="">
+            </li>
+            <li class="member-info">
+              <h2>21</h2>
+              <small>Organizers</small>
+            </li>
+            <li>
+              <img src="http://lorempixel.com/210/252/" alt="">
+            </li>
+            <li>
+              <img src="http://lorempixel.com/210/253/" alt="">
+            </li>
+            <li>
+              <img src="http://lorempixel.com/210/254/" alt="">
+            </li>
+            <li>
+              <img src="http://lorempixel.com/210/255/" alt="">
+            </li>
+            <li>
+              <img src="http://lorempixel.com/210/256/" alt="">
+            </li>
+            <li>
+              <img src="http://lorempixel.com/211/250/" alt="">
+            </li>
+            <li>
+              <img src="http://lorempixel.com/212/250/" alt="">
+            </li>
+            <li>
+              <img src="http://lorempixel.com/213/250/" alt="">
+            </li>
+            <li>
+              <img src="http://lorempixel.com/214/250/" alt="">
+            </li>
+            <li>
+              <img src="http://lorempixel.com/215/250/" alt="">
+            </li>
+            <div class="clear"></div>
+
+          </ul>
+        </div>
+
+
+        <div id="footer" class="footer">
+          <div class="wrapper wrapper-grey wrapper-padded">
+            <div class="container">
+              <div class="row row-spaced">
+                <div class="col-md-6">
+                  <span class="logo"></span>
+                  <p>In the spirit of ideas worth spreading, TEDx is a program of local, self-organized evtents that bring people together to share a TED-like experience. At a TEDx event, TEDTalks video and live speakers combine to spark deep discussion and connection in a small group. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. (Subject to certain rules and regulations.</p>
+                </div>
+                <div class="col-md-6">
+                 <div class="row row-margin">
+                   <div class="col-md-12">
+                    <h2>Be Social</h2>
+                  </div>
+                </div>
+                <div class="footer-form">
+                  <div class="row form-row">
                     <div class="col-md-6">
-                      <p class="copyright">
-                        ©2012-2013 TEDxAUEB. All rights reserved
-                      </p>
-                      <p class="disclaimer">This independently orgianized TEDx event is operated under license from TED.</p>
+                      <input type="text" placeholder="mkis">
                     </div>
                     <div class="col-md-6">
-                      <ul id="main-navigation" class="nav footer-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Event</a></li>
-                        <li><a href="#">Speakers</a></li>
-                        <li><a href="#">Talks</a></li>
-                        <li><a href="#">Social</a></li>
-                        <li><a href="#">Contact</a></li>
-                      </ul>
+                      <input type="text" placeholder="mkis">
                     </div>
                   </div><!-- row -->
-                </div><!-- container -->
-              </div><!-- wrapper -->
-            </div><!-- footer -->
+                  <div class="row form-row">
+                    <div class="col-md-12">
+                     <textarea name="" id="" cols="30" rows="5" placeholder="Your Message"></textarea>
+                   </div>
+
+                 </div><!-- row -->
+                 <div class="row">
+                  <div class="col-md-12">
+                    <a class="red-button pull-right">Send</a>
+                    <p class="small-grey pull-right">We will get back to you
+                      as soon as possible</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div><!-- row -->
+            <div class="row">
+              <div class="col-md-6">
+                <p class="copyright">
+                  ©2012-2013 TEDxAUEB. All rights reserved
+                </p>
+                <p class="disclaimer">This independently orgianized TEDx event is operated under license from TED.</p>
+              </div>
+              <div class="col-md-6">
+                <ul id="main-navigation" class="nav footer-nav">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Event</a></li>
+                  <li><a href="#">Speakers</a></li>
+                  <li><a href="#">Talks</a></li>
+                  <li><a href="#">Social</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div><!-- row -->
+          </div><!-- container -->
+        </div><!-- wrapper -->
+      </div><!-- footer -->
 
 
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-            <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
-            <script src="js/vendor/bootstrap.min.js"></script>
-            <script src="js/jquery.easing.1.3.js"></script>
-            <script src="js/main.js"></script>
-            <script src="js/waypoints.min.js"></script>
+      <script src="js/vendor/bootstrap.min.js"></script>
+      <script src="js/jquery.easing.1.3.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/waypoints.min.js"></script>
+      <script src="js/jquery.bxslider.min.js"></script>
 
-        
 
-            <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-              g.src='//www.google-analytics.com/ga.js';
-              s.parentNode.insertBefore(g,s)}(document,'script'));
-            </script>
-          </body>
-          </html>
+
+      <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src='//www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+      </script>
+    </body>
+    </html>

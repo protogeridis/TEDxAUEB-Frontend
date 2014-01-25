@@ -8,6 +8,11 @@ $(document).ready(function(){
 		});
 	});
 
+	$('.bxslider').bxSlider({
+  pagerCustom: '#bx-pager',
+  mode:'fade'
+});
+
 	$.fn.waypoint.defaults = {
 		context: window,
 		continuous: true,
