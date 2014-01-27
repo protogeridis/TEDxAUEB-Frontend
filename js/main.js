@@ -13,6 +13,7 @@ $(document).ready(function(){
   mode:'fade'
 });
 
+
 	$.fn.waypoint.defaults = {
 		context: window,
 		continuous: true,
